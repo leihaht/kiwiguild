@@ -4,4 +4,4 @@ tasks = fs.readdirSync './gulp/tasks/'
   .filter onlyScripts
 
 tasks.forEach (task) ->
-	require './tasks/' + task
+  require './tasks/' + task

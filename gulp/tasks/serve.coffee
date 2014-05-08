@@ -4,9 +4,10 @@ http    = require 'http'
 config  = require '../config'
 
 gulp.task 'serve', ->
-	app = connect()
-		.use connect.logger 'dev'
-		.use connect.static config.root
+  app = connect()
+    .use connect.logger 'dev'
+    .use connect.static config.root
+    #.listen config.port, next
 
-	http.createServer app
-    .listen config.port
+    http.createServer app
+      .listen config.port

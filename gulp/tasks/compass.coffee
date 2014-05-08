@@ -1,6 +1,5 @@
 compass      = require 'gulp-compass'
 gulp         = require 'gulp'
-livereload   = require 'gulp-livereload'
 notify       = require 'gulp-notify'
 handleErrors = require '../util/handleErrors'
 
@@ -11,5 +10,4 @@ gulp.task 'compass', ->
 			css: 'build',
 			sass: 'src/sass'
 		}
-		.on 'error', handleErrors
-		.pipe livereload()
+  .on 'error', handleErrors
