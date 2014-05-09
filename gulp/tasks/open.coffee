@@ -2,7 +2,7 @@ gulp = require 'gulp'
 open = require 'gulp-open'
 config = require '../config'
 
-gulp.task 'open', ['build'], ->
+gulp.task 'open', ->
 
   options = {
     url: 'http://localhost:' + config.port

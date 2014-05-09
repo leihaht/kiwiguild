@@ -1,10 +1,9 @@
 gulp = require 'gulp'
 gutil = require 'gulp-util'
 
-gulp.task 'copy', ->
-  gulp.start 'copy-vendor', 'copy-html'
+gulp.task 'copy', ['copy:vendor', 'copy:html']
   
-gulp.task 'copy-vendor', ->
+gulp.task 'copy:vendor', ->
   gulp.src [
     './bower_components/jquery/dist/jquery.min.js'
   ]
@@ -15,7 +14,7 @@ gulp.task 'copy-vendor', ->
   ]
   .pipe gulp.dest './build/vendor/bootstrap/'
   
-gulp.task 'copy-html', ->
+gulp.task 'copy:html', ->
   gulp.src [
     'src/index.html'
   ]

@@ -9,8 +9,8 @@ gulp.task 'less', ->
   gulp.src [
     './src/less/app.less'
   ]
-  .pipe recess()
-  .pipe less()
+  .pipe recess({strictPropertyOrder: false}).on 'error', handleErrors
+  .pipe less().on 'error', handleErrors
   .pipe csso()
   .pipe gulp.dest 'build/'
   .on 'error', handleErrors
