@@ -1,10 +1,10 @@
 {
-  "name": "testbrow",
+  "name": "kiwi-guild-site",
   "version": "0.0.1",
-  "description": "Gulp starter with common tasks and scenarios",
+  "description": "Kiwi guild web site",
   "repository": {
     "type": "git",
-    "url": "git://github.com/leihaht/testbrow.git"
+    "url": "git://github.com/leihaht/kiwiguild.git"
   },
   "browser": {
     "underscore": "backbone/node_modules/underscore"

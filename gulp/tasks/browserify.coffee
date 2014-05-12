@@ -7,7 +7,7 @@ source       = require 'vinyl-source-stream'
 
 gulp.task 'browserify', ->
   browserify {
-    entries: ['./src/javascript/app.coffee'],
+    entries: ['./src/javascript/app.coffee']
     extensions: ['.coffee', '.hbs']
   }
   .require 'backbone/node_modules/underscore', { expose: 'underscore' }
